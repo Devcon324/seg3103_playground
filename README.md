@@ -1,31 +1,88 @@
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+This is SEG_2303_LAB_01 code and screenshots for understanding Git and Github and checking the installations of Java/JUnit, Elixir/ExUnit and Python/PyUnit
 
 ## Code Example
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+This library divides two numbers. start by running `./bin/run` in either the `newmath_java`, `newmath_ex`, or `newmath_py` directories
+
+Example in `newmath_java`:
+
+```bash
+./bin/run 
+Newmath (type 'exit' to exit program)
+Numerator: 10
+Demoninator: 5
+10 / 5 = 2
+Numerator: 20
+Demoninator: 3
+20 / 3 = 6
+Numerator: exit
+```
 
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+This project exists to ensure students have the development environment set up correctly
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
+```bash
+# Installation
+git clone https://github.com/Devcon324/seg3103_playground.git
+```
 
 ## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+https://junit.org/junit5/
+
+https://hexdocs.pm/ex_unit/ExUnit.html
+
+https://wiki.python.org/moin/PyUnit
 
 ## Tests
 
-Describe and show how to run the tests with code examples.
+run tests with `./bin/test`
+
+Example in `newmath_java`:
+
+```bash
+./bin/test        
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+.
++-- JUnit Jupiter [OK]
+| '-- NewmathTest [OK]
+|   +-- div_ok() [OK]
+|   '-- div_by_zero() [OK]
+'-- JUnit Vintage [OK]
+
+Test run finished after 201 ms
+[         3 containers found      ]
+[         0 containers skipped    ]
+[         3 containers started    ]
+[         0 containers aborted    ]
+[         3 containers successful ]
+[         0 containers failed     ]
+[         2 tests found           ]
+[         0 tests skipped         ]
+[         2 tests started         ]
+[         0 tests aborted         ]
+[         2 tests successful      ]
+[         0 tests failed          ]
+```
+
+## Screenshots to prove code can run
+
+![Java_Test](assets/newmath_java.png)
+![Elixir_Test](assets/newmath_ex.png)
+![Python_Test](assets/newmath_py.png)
 
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+Devon Knight
+300325369
 
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.)
+MIT License
