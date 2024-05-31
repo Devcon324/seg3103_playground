@@ -16,16 +16,7 @@ Run ecs tests with
 java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
 ```
 
-```bash
-./bin/run 
-Newmath (type 'exit' to exit program)
-Numerator: 10
-Demoninator: 5
-10 / 5 = 2
-Numerator: 20
-Demoninator: 3
-20 / 3 = 6
-Numerator: exit
+
 ```
 
 # Exercise 1
