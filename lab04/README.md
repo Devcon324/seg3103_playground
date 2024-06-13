@@ -34,7 +34,7 @@ There are 5 tests with 5 commits each, with the final commit as a refactor for a
 All commits were used with concatenation
 
 ```bash
-git add . ; git commit -m "message" ; git push origin main
+git add . && git commit -m "message" && git push origin main
 ```
 
 ![image](.\assets\commits.png)
