@@ -34,6 +34,6 @@ public class FizzbuzzTest {
     @Test
     public void test_fizzBuzz15() {
         System.err.println(FizzBuzz.fizzingBuzzing(15));
-        assertEquals("15", FizzBuzz.fizzingBuzzing(15));
+        assertEquals("FizzBuzz", FizzBuzz.fizzingBuzzing(15));
     }
 }
