@@ -5,9 +5,12 @@
 ### Prerequisite Step
 
 I compile and run tic and fizzbuzz
-![image](./assets/)
+![image](.\assets\compile_tic.png)
+![image](.\assets\compile_fizzbuzz.png)
+![image](.\assets\run_tic.png)
+![image](.\assets\run_fizzbuzz.png)
 
-### Testing FizzBuzz in JAVA
+### FizzBuzz in JUnit Java
 
 I chose to work on the FizzBuzz project and implemented FizzBuzzTest.java
 
@@ -26,10 +29,12 @@ FizzBuss prints "Fizz", "Buzz", FizzBuzz" or the inputted number:
 
 Since we cannot use the Elixir code, the FizzBuzz.java code takes an integer and computes FizzBuzz.
 
-There are 5 tests with 5 commits each, with the final commit as a refactor for all tests to remove any println debugging
+There are 5 tests with 5 commits each, with the final commit as a refactor for all tests to remove any println debugging. there is not much time needed to spend between adding tests that succeed and fail, the code is very repetitive between tests and can be quickly implemented
 
 All commits were used with concatenation
 
 ```bash
 git add . ; git commit -m "message" ; git push origin main
 ```
+
+![image](.\assets\commits.png)
