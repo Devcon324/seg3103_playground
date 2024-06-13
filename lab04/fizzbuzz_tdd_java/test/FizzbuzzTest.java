@@ -24,4 +24,10 @@ public class FizzbuzzTest {
         System.err.println(FizzBuzz.fizzingBuzzing(3));
         assertEquals("Fizz", FizzBuzz.fizzingBuzzing(3));
     }
+
+    @Test
+    public void test_fizzBuzz5() {
+        System.err.println(FizzBuzz.fizzingBuzzing(5));
+        assertEquals("5", FizzBuzz.fizzingBuzzing(5));
+    }
 }
