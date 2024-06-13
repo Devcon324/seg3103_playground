@@ -11,6 +11,12 @@ I compile and run tic and fizzbuzz
 
 I chose to work on the FizzBuzz project and implemented FizzBuzzTest.java
 
+You can compile and run the code while in the /lab04/fizzbuzz_tdd_java directory
+
+``` bash
+javac -encoding UTF-8 --source-path src -d dist -cp dist:lib/junit-platform-console-standalone-1.7.1.jar src/*.java && javac -encoding UTF-8 --source-path test -d dist -cp dist:lib/junit-platform-console-standalone-1.7.1.jar test/*.java && java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
+```
+
 FizzBuss prints "Fizz", "Buzz", FizzBuzz" or the inputted number:
 
 - for multiples of 3, the program should print "Fizz" instead of the number.
@@ -18,10 +24,12 @@ FizzBuss prints "Fizz", "Buzz", FizzBuzz" or the inputted number:
 - For numbers that are multiples of both 3 and 5, it should print "FizzBuzz".
 - For all other numbers, it should simply print the number itself.
 
-In this code, the fizzbuzz function takes a single argument n, which represents the number up to which we want to print the FizzBuzz sequence. The function uses the cond construct in Elixir, which allows us to define multiple conditions and their corresponding actions.
+Since we cannot use the Elixir code, the FizzBuzz.java code takes an integer and computes FizzBuzz.
 
-``` bash
-javac -encoding UTF-8 --source-path src -d dist -cp dist:lib/junit-platform-console-standalone-1.7.1.jar src/*.java
-javac -encoding UTF-8 --source-path test -d dist -cp dist:lib/junit-platform-console-standalone-1.7.1.jar test/*.java
-java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
+There are 5 tests with 5 commits each, with the final commit as a refactor for all tests to remove any println debugging
+
+All commits were used with concatenation
+
+```bash
+git add . ; git commit -m "message" ; git push origin main
 ```
