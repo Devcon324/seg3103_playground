@@ -30,4 +30,10 @@ public class FizzbuzzTest {
         System.err.println(FizzBuzz.fizzingBuzzing(5));
         assertEquals("Buzz", FizzBuzz.fizzingBuzzing(5));
     }
+
+    @Test
+    public void test_fizzBuzz15() {
+        System.err.println(FizzBuzz.fizzingBuzzing(15));
+        assertEquals("15", FizzBuzz.fizzingBuzzing(15));
+    }
 }
