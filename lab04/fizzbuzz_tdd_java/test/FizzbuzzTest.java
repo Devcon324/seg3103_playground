@@ -12,4 +12,11 @@ public class FizzbuzzTest {
         System.err.println(FizzBuzz.fizzingBuzzing(1));
         assertEquals("1", FizzBuzz.fizzingBuzzing(1));
     }
+
+    @Test
+    public void test_fizzBuzz2() {
+        System.err.println(FizzBuzz.fizzingBuzzing(2));
+        assertEquals("x", FizzBuzz.fizzingBuzzing(2));
+    }
+
 }
