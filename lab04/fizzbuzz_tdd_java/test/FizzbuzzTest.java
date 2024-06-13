@@ -16,7 +16,7 @@ public class FizzbuzzTest {
     @Test
     public void test_fizzBuzz2() {
         System.err.println(FizzBuzz.fizzingBuzzing(2));
-        assertEquals("x", FizzBuzz.fizzingBuzzing(2));
+        assertEquals("2", FizzBuzz.fizzingBuzzing(2));
     }
 
 }
