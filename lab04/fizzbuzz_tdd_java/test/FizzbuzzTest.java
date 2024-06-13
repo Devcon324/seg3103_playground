@@ -10,6 +10,6 @@ public class FizzbuzzTest {
     @Test
     public void test_fizzBuzz1() {
         System.err.println(FizzBuzz.fizzingBuzzing(1));
-        assertEquals("x", FizzBuzz.fizzingBuzzing(1));
+        assertEquals("1", FizzBuzz.fizzingBuzzing(1));
     }
 }
