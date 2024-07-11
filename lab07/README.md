@@ -21,6 +21,10 @@ Calculator running:
 
 ![image](./assets/calculator_pic.png)
 
+Spotbugs Running:
+
+![image](./assets/spot_bugs_create_proj.png)
+
 ### Bug 1 Comparison of String parameter using == or !=
 
 ![image](./assets/bug_1.png)
