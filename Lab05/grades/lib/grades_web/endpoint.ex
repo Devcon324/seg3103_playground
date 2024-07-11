@@ -7,14 +7,13 @@ defmodule GradesWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_grades_key",
-    signing_salt: "4j/B5g3p"
+    signing_salt: "5XGnGJHD",
+    same_site: "Lax"
   ]
 
-  socket "/socket", GradesWeb.UserSocket,
-    websocket: true,
-    longpoll: false
-
-  socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
+  socket "/live", Phoenix.LiveView.Socket,
+    websocket: [connect_info: [session: @session_options]],
+    longpoll: [connect_info: [session: @session_options]]
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -24,7 +23,7 @@ defmodule GradesWeb.Endpoint do
     at: "/",
     from: :grades,
     gzip: false,
-    only: ~w(css fonts images js favicon.ico robots.txt)
+    only: GradesWeb.static_paths()
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
@@ -33,6 +32,10 @@ defmodule GradesWeb.Endpoint do
     plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
   end
+
+  plug Phoenix.LiveDashboard.RequestLogger,
+    param_key: "request_logger",
+    cookie_key: "request_logger"
 
   plug Plug.RequestId
   plug Plug.Telemetry, event_prefix: [:phoenix, :endpoint]

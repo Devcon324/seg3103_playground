@@ -19,15 +19,15 @@ defmodule GradesWeb.ConnCase do
 
   using do
     quote do
+      # The default endpoint for testing
+      @endpoint GradesWeb.Endpoint
+
+      use GradesWeb, :verified_routes
+
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
       import GradesWeb.ConnCase
-
-      alias GradesWeb.Router.Helpers, as: Routes
-
-      # The default endpoint for testing
-      @endpoint GradesWeb.Endpoint
     end
   end
 
