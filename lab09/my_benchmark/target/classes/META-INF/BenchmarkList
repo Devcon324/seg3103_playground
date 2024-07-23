@@ -1,0 +1,2 @@
+JMH S 24 sampleProject.SampleCode S 60 sampleProject.jmh_generated.SampleCode_multiplyArray_jmhTest S 13 multiplyArray S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 24 sampleProject.SampleCode S 55 sampleProject.jmh_generated.SampleCode_sumArray_jmhTest S 8 sumArray S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
